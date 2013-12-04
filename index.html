@@ -7,29 +7,6 @@
     <meta name="description" content="qwe : " />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="https://ws.socialization.kaspersky-labs.com/js/oauthapi.js"></script>
-	<script>
-	function onSuccess(profile) {
-		console.log('Success: ' + profile['UcpUserId'])
-		
-		$('#avatar').text( profile['Avatar'] )
-		$('#userid').text( profile['UcpUserId'] )
-		$('#email').text(  profile['Email'] )
-	}
-
-	function onNotAuth(authUrl) {
-		window.location = authUrl + '?redirectUrl=' + window.location.href
-	}
-
-	function onFailure(code, reason) {
-		console.log('onFailure: ' + code + ' ' + reason)
-	}
-
-	$(function(){
-		social.getProfile(onSuccess, onNotAuth, onFailure)
-	})
-	</script>
 
     <title>qwe</title>
   </head>
@@ -50,11 +27,6 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-
-Avatar: <span id="avatar"></span><br />
-UserId: <span id="userid"></span><br />
-Email:  <span id="email"></span><br />
-
         <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
