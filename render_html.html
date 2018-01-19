@@ -7,6 +7,7 @@ alert(url)
 
 var xhr = new XMLHttpRequest();
 xhr.open('GET', url)
+xhr.send()
 
 if(xhr.status == 200)
   document.write(xhr.responseText)
