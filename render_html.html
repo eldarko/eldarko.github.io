@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+var url = window.location.hash.substr(1);
+var xhr = new XMLHttpRequest();
+xhr.open('GET', url)
+
+if(xhr.status == 200)
+  document.write(xhr.responseText)
+else
+  document.write('Non-OK response code: ' + xhr.status)
+</script>
+</head>
+<body>
+</body>
+</html>
